@@ -1,10 +1,24 @@
+import { useState } from "react";
+
 const About = () => {
-	const myStyle = {
+	const [myStyle, setMyStyle] = useState({
 		color: "white",
 		backgroundColor: "black",
-	};
+	});
 
-    const []
+	const handleOnClick = () => {
+		if (myStyle.color == "white") {
+			setMyStyle({
+				color: "black",
+				backgroundColor: "white",
+			});
+		} else {
+			setMyStyle({
+				color: "white",
+				backgroundColor: "black",
+			});
+		}
+	};
 
 	return (
 		<>
@@ -117,7 +131,9 @@ const About = () => {
 				</div>
 			</div>
 			<div className="container">
-				<button className="btn btn-warning">Click</button>
+				<button onClick={handleOnClick} className="btn btn-warning">
+					Click
+				</button>
 			</div>
 		</>
 	);
