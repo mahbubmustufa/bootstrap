@@ -1,10 +1,11 @@
-function App() {
+import About from "./components/About";
 
-  return (
-    <>
-      <button className="btn btn-info">Hello</button>
-    </>
-  )
+function App() {
+	return (
+		<>
+			<About />
+		</>
+	);
 }
 
-export default App
+export default App;
