@@ -1,3 +1,37 @@
-*{
-    
+.color {
+	margin-top: 20px;
+	display: grid;
+	gap: 5px;
+	grid-template-columns: repeat(4, 50px);
+}
+.color * {
+	border: 2px solid rgb(49, 21, 59);
+	height: 50px;
+}
+.blue {
+	background-color: #00a9ff;
+}
+.yellow {
+	background-color: #f4ce14;
+}
+.green {
+	background-color: #005b41;
+}
+.pink {
+	background-color: #da0c81;
+}
+.navi {
+	background-color: #141e46;
+}
+.sky {
+	background-color: #5cd2e6;
+}
+.kathali {
+	background-color: #e55604;
+}
+.purple {
+	background-color: #9400ff;
+}
+.true-red {
+	background-color: #fe0000;
 }
