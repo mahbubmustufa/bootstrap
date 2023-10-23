@@ -41,7 +41,7 @@ const ColorPlate = () => {
 				<button onClick={toggle} value="kathali" className="kathali"></button>
 				<button onClick={toggle} value="purple" className="purple"></button>
 			</div>
-			<h1>{color}</h1>
+			<h1 className="text-light text-uppercase m-4">{color}</h1>
 		</>
 	);
 };

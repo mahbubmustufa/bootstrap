@@ -3,7 +3,7 @@ const Nav = ({ title, mode, toggle }) => {
 		<div className="container-fluid">
 			<nav className={`navbar navbar-expand-lg navbar-${mode} bg-${mode}`}>
 				<div className="container-fluid">
-					<a className="navbar-brand" href="#">
+					<a className="navbar-brand" to="/">
 						{title}
 					</a>
 
@@ -42,23 +42,18 @@ const Nav = ({ title, mode, toggle }) => {
 					<div className="collapse navbar-collapse" id="navbarNav">
 						<ul className="navbar-nav">
 							<li className="nav-item">
-								<a className="nav-link active" aria-current="page" href="#">
+								<a className="nav-a active" aria-current="page" to="/">
 									Home
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="#">
-									Features
+								<a className="nav-a" to="/about">
+									About
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="#">
-									Pricing
-								</a>
-							</li>
-							<li className="nav-item">
-								<a className="nav-link disabled" aria-disabled="true">
-									Disabled
+								<a className="nav-a" href="/colors">
+									Colors
 								</a>
 							</li>
 						</ul>

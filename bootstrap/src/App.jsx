@@ -1,5 +1,5 @@
 import { useState } from "react";
-///import About from "./components/About";
+import About from "./components/About";
 import Nav from "./components/Nav";
 //import Alart from "./components/Alart";
 import TextAris from "./components/TextAris";
@@ -40,8 +40,7 @@ function App() {
 	return (
 		<>
 			<Nav title="Mahbub" mode={mode} toggle={toggle} />
-			{/*<Alart alart={alert} />*/}
-			{/*<About />*/}
+			<About />
 			<ColorPlate toggle="toggle" onClick="onClick" />
 			<TextAris title="Enter text to analyze" btnText="Uppercase" />
 		</>
