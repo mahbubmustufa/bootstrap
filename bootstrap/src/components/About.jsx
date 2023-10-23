@@ -6,23 +6,27 @@ const About = () => {
 		backgroundColor: "black",
 	});
 
+	const [btnText, setBtnText] = useState("Enable Dark Mode");
+
 	const handleOnClick = () => {
 		if (myStyle.color == "white") {
 			setMyStyle({
 				color: "black",
 				backgroundColor: "white",
 			});
+			setBtnText("Enable Dark Mode");
 		} else {
 			setMyStyle({
 				color: "white",
 				backgroundColor: "black",
 			});
+			setBtnText("Enable Light Mode");
 		}
 	};
 
 	return (
-		<>
-			<div style={myStyle} className="container">
+		<div style={myStyle} className="py-2">
+			<div style={myStyle} className="container-fluid">
 				<h1 style={myStyle} className="my-3">
 					About Us
 				</h1>
@@ -132,10 +136,10 @@ const About = () => {
 			</div>
 			<div className="container">
 				<button onClick={handleOnClick} className="btn btn-warning">
-					Click
+					{btnText}
 				</button>
 			</div>
-		</>
+		</div>
 	);
 };
 
